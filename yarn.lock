@@ -5,11 +5,51 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
+"@types/bun@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@types/bun@npm:1.1.0"
   dependencies:
+    bun-types: "npm:1.1.0"
+  checksum: 10c0/f624c41c194332831edce718567a03e25f0ecf72cc0fb92a34e1857a97e17ba7aa9c6a74d479890c1ad3de51146dd5c97dec5194fa3135e0ee3f5abbc14e93b5
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:*, @types/node@npm:~20.11.3":
+  version: 20.11.30
+  resolution: "@types/node@npm:20.11.30"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/867cfaf969c6d8850d8d7304e7ab739898a50ecb1395b61ff2335644f5f48d7a46fbc4a14cee967aed65ec134b61a746edae70d1f32f11321ccf29165e3bc4e6
+  languageName: node
+  linkType: hard
+
+"@types/ws@npm:~8.5.10":
+  version: 8.5.10
+  resolution: "@types/ws@npm:8.5.10"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 10c0/e9af279b984c4a04ab53295a40aa95c3e9685f04888df5c6920860d1dd073fcc57c7bd33578a04b285b2c655a0b52258d34bee0a20569dca8defb8393e1e5d29
+  languageName: node
+  linkType: hard
+
+"bun-types@npm:1.1.0":
+  version: 1.1.0
+  resolution: "bun-types@npm:1.1.0"
+  dependencies:
+    "@types/node": "npm:~20.11.3"
+    "@types/ws": "npm:~8.5.10"
+  checksum: 10c0/7393188baa76d0dde3ce1a5a0063c90edf2b84960aa9f001fd81728091cdd41cdf73e0937fca1c3ad4663245d81ea963915d2179f02012e508171b4056c6eafc
+  languageName: node
+  linkType: hard
+
+"js-pe@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "js-pe@workspace:."
+  dependencies:
+    "@types/bun": "npm:^1.1.0"
     typescript: "npm:^5.4.5"
+  peerDependencies:
+    typescript: ^5.0.0
   languageName: unknown
   linkType: soft
 
@@ -30,5 +70,12 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/db2ad2a16ca829f50427eeb1da155e7a45e598eec7b086d8b4e8ba44e5a235f758e606d681c66992230d3fc3b8995865e5fd0b22a2c95486d0b3200f83072ec9
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
   languageName: node
   linkType: hard
