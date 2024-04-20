@@ -1,15 +1,10 @@
 {
-  "dependencies": {
-    "typescript": "^5.4.5"
-  },
-  "packageManager": "yarn@4.1.1",
   "name": "js-pe",
   "module": "index.ts",
+  "packageManager": "yarn@4.1.1",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "^1.1.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "@types/bun": "^1.1.0",
+    "typescript": "^5.4.5"
   }
 }

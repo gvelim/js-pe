@@ -132,3 +132,5 @@ dist
 node_modules/.bin
 node_modules/typescript
 node_modules/.yarn-integrity
+
+bun.lockb
